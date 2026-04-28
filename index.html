@@ -17,6 +17,8 @@
 </head>
 <body>
 
+<div id="mouse-spotlight"></div>
+
 <header class="header" id="home">
     <div class="container">
 
@@ -113,7 +115,7 @@
             <div class="about-mini">
                 <div class="mini-item">
                     <span class="mini-label">Projects</span>
-                    <span class="mini-value">10+</span>
+                    <span class="mini-value">Video Showcases</span>
                 </div>
                 <div class="mini-item">
                     <span class="mini-label">Focus</span>
@@ -140,12 +142,15 @@
             <p class="about-desc">
                 My learning journey focuses on modern web technologies, clean code structure,
                 and responsive design. I continuously improve my skills through academic
-                projects, self-learning, and hands-on practice.
+                learning, self-study, and hands-on practice.
             </p>
 
             <div class="about-chips">
-                <span class="chip"><i class="fa-solid fa-code"></i> Laravel</span>
-                <span class="chip"><i class="fa-solid fa-layer-group"></i> Frontend</span>
+                <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="chip"><i class="fa-brands fa-js"></i> JS</span>
+                <span class="chip"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="chip"><i class="fa-brands fa-laravel"></i> Laravel</span>
                 <span class="chip"><i class="fa-solid fa-database"></i> MySQL</span>
             </div>
 
@@ -181,146 +186,93 @@
         </div>
 
     </div>
-</section>
-
-
-<!-- PROJECTS -->
+</section><!-- PROJECTS -->
 <section class="projects">
     <div id="projects" class="anchor"></div>
 
     <div class="container">
         <div class="projects-head">
-            <span class="projects-tag">MY PROJECTS</span>
+            <span class="projects-tag">VIDEO SHOWCASE</span>
             <h2 class="projects-title">
-                Selected <span>Projects</span>
+                My <span>Work in Action</span>
             </h2>
             <p class="projects-desc">
-                A collection of projects I’ve worked on during my learning journey,
-                focusing on functionality, clean code, and user experience.
+                Take a look at how my applications function through these video demonstrations.
+                Each project is built with passion and precision.
             </p>
         </div>
 
         <div class="projects-grid">
 
+            <!-- PROJECT 1 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="Asset/p1.png" alt="Acrylic E-Commerce Website">
-                </div>
-                <div class="project-content">
-                    <h3>Acrylic E-Commerce Website</h3>
-                    <p>
-                        Web-based e-commerce for custom acrylic products built with Laravel,
-                        featuring admin login, dashboard, homepage management, and package settings.
-                    </p>
-                    <div class="project-tech">
-                        <span>Laravel</span>
-                        <span>MySQL</span>
-                        <span>Bootstrap</span>
+                <div class="project-video" onmouseover="this.querySelector('video').play()" onmouseout="this.querySelector('video').pause(); this.querySelector('video').currentTime=0;">
+                    <video muted loop playsinline poster="Asset/p1.png">
+                        <source src="Asset/V1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="play-icon-wrap">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <span>Hover to Play</span>
                     </div>
-                    <a href="https://aldi6760.github.io/Toko_Akrilik/"
-                       class="project-link" target="_blank" rel="noopener">
-                        View on GitHub <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Asset/p2.png" alt="Donation Website">
                 </div>
                 <div class="project-content">
-                    <h3>Donation Website</h3>
+                    <h3> Haloo HR – Enterprise Human Resource Information System (HRIS)</h3>
                     <p>
-                        A simple donation website built using HTML, CSS, and JavaScript
-                        to display donation information and support online contributions.
+                        
+Haloo HR is a modern Human Resource Management platform designed to automate employee administrative processes, including leave requests, permissions, and cash advance management. The system is built with a focus on improving workflow efficiency between employees, supervisors, and the HR/Admin team.
                     </p>
                     <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span title="Laravel"><i class="fa-brands fa-laravel"></i></span>
+                        <span title="MySQL"><i class="fa-solid fa-database"></i></span>
+                        <span title="AdminLTE"><i class="fa-solid fa-gauge-high"></i></span>
+                        <span title="SweetAlert2"><i class="fa-solid fa-bell"></i></span>
                     </div>
-                    <a href="https://aldi6760.github.io/Ada-kami-Donasi/"
-                       class="project-link" target="_blank" rel="noopener">
-                        View on GitHub <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Asset/p3.png" alt="Food Ordering Website">
-                </div>
-                <div class="project-content">
-                    <h3>Food Ordering Website</h3>
-                    <p>
-                        A food ordering website built with HTML, CSS, and JavaScript,
-                        allowing users to browse menus and place orders through a clean UI.
-                    </p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <a href="https://aldi6760.github.io/Website-TokoOnline/"
-                       class="project-link" target="_blank" rel="noopener">
-                        View on GitHub <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Asset/P4.png" alt="Portfolio Website">
-                </div>
-                <div class="project-content">
-                    <h3>Portfolio Website</h3>
-                    <p>
-                        Personal portfolio website to showcase your profile, projects, skills, and contacts with a modern and user-friendly design
-                    </p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Bootstrap</span>
-                    </div>
-                    <a href="https://aldi6760.github.io/Aldisutanto.github.io/"
-                       class="project-link" target="_blank" rel="noopener">
-                        View on GitHub <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Asset/p5.png" alt="Game Edukatif">
-                </div>
-                <div class="project-content">
-                    <h3>Game Edukatif</h3>
-                    <p>
-                        Educational game built with Unity to teach children about fruits and vegetables.
-                    </p>
-                    <div class="project-tech">
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>CANVA</span>
+                    <div class="project-actions">
+                        <a href="javascript:void(0)" class="project-link" onclick="openModal('Asset/V1.mp4')">
+                            VIEW DETAILS <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
-
-            
+            <!-- PROJECT 2 -->
             <div class="project-card">
-                <div class="project-image">
-                    <img src="Asset/P6.png" alt="Game Edukatif">
+                <div class="project-video" onmouseover="this.querySelector('video').play()" onmouseout="this.querySelector('video').pause(); this.querySelector('video').currentTime=0;">
+                    <video muted loop playsinline poster="Asset/p2.png">
+                        <source src="Asset/V2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="play-icon-wrap">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <span>Hover to Play</span>
+                    </div>
                 </div>
                 <div class="project-content">
-                    <h3>Maze Adventure Game</h3>
+                    <h3>E-Commerce Platform</h3>
                     <p>
-                        3D maze game built with Unity where players navigate through a labyrinth using strategic movement and spatial awareness.
+                        King Akrilik is a company profile and e-commerce platform for custom acrylic products, designed with a modern and premium appearance.
+
+On the frontend side, the website features a cinematic hero slider, product catalog, detailed product pages with direct WhatsApp ordering buttons, an information ticker, and a responsive design built with Bootstrap 5.
+
+On the backend side, it provides an admin dashboard to manage products (CRUD), update website content (text, images, contact), and includes an authentication system for security.
+
+The technologies used include Laravel, Blade Template, Bootstrap 5, and WhatsApp integration, making the website effective for both branding and simplifying customer transactions.
                     </p>
                     <div class="project-tech">
-                        <span>Unity</span>
-                        <span>C#</span>
-                        <span>UNITY TERRAIN</span>
+                        <span title="Laravel"><i class="fa-brands fa-laravel"></i></span>
+                        <span title="Bootstrap 5"><i class="fa-brands fa-bootstrap"></i></span>
+                        <span title="MySQL"><i class="fa-solid fa-database"></i></span>
+                        <span title="Javascript"><i class="fa-brands fa-js"></i></span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="javascript:void(0)" class="project-link" onclick="openModal('Asset/V2.mp4')">
+                            VIEW DETAILS <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -328,8 +280,6 @@
         </div>
     </div>
 </section>
-
-
 <!-- CONTACT -->
 <section class="contact">
     <div id="contact" class="anchor"></div>
@@ -345,8 +295,8 @@
 
             <p class="contact-desc">
                 Feel free to reach out if you want to collaborate, ask questions,
-                or just say hello. I’m always open to discussing new projects
-                and opportunities.
+                or just say hello. I’m always open to discussing new
+                opportunities.
             </p>
 
             <div class="contact-cards">
@@ -400,6 +350,19 @@
 </section>
 
 
+<!-- VIDEO MODAL -->
+<div class="video-modal" id="videoModal">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-video-wrap">
+            <video id="modalVideo" controls playsinline>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container footer-grid">
@@ -409,52 +372,55 @@
                 <span class="brand-badge">A</span>
                 <span class="brand-text">ALDI SUTANTO</span>
             </div>
-
-            <p class="footer-desc">
-                A passionate web development student focused on building
-                clean, modern, and user-friendly web applications.
-            </p>
         </div>
 
-        <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="footer-links-wrap">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
         </div>
 
-        <div class="footer-social">
-            <h4>Follow Me</h4>
-
-            <div class="footer-icons">
-                <a href="https://instagram.com/aldistt_" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="https://github.com/Aldi6760" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://linkedin.com/in/aldi-sutanto" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </div>
+        <div class="footer-icons">
+            <a href="https://instagram.com/aldistt_" target="_blank" rel="noopener" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Aldi6760" target="_blank" rel="noopener" title="Github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/aldi-sutanto" target="_blank" rel="noopener" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        <p>
-            © <span id="year"></span> Aldi Sutanto. All Rights Reserved.
-        </p>
+        <p>© <span id="year"></span> Aldi Sutanto. All Rights Reserved.</p>
     </div>
 </footer>
 
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // ===== Video Modal Logic =====
+    function openModal(src) {
+        const modal = document.getElementById('videoModal');
+        const video = document.getElementById('modalVideo');
+        video.src = src;
+        modal.classList.add('active');
+        video.play();
+        document.body.style.overflow = 'hidden'; // Prevent scroll
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('videoModal');
+        const video = document.getElementById('modalVideo');
+        modal.classList.remove('active');
+        video.pause();
+        video.src = "";
+        document.body.style.overflow = 'auto'; // Restore scroll
+    }
 
     // ===== WhatsApp Form =====
     function sendWhatsApp(e){
@@ -468,6 +434,13 @@
         const phone = "6285211426640";
         window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
     }
+
+    // ===== Mouse Spotlight Logic =====
+    const spotlight = document.getElementById('mouse-spotlight');
+    window.addEventListener('mousemove', (e) => {
+        spotlight.style.left = e.clientX + 'px';
+        spotlight.style.top = e.clientY + 'px';
+    });
 
     // ===== NAV HEIGHT DINAMIS =====
     function setNavHeightVar(){
@@ -492,7 +465,7 @@
 
             const nav = document.querySelector('.nav');
             const navH = nav ? nav.getBoundingClientRect().height : 0;
-            const gap = 14;
+            const gap = 10;
 
             const top = target.getBoundingClientRect().top + window.pageYOffset - navH - gap;
 
